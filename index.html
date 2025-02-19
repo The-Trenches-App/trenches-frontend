@@ -12,7 +12,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background: #1a1a1a;
+            background: #000000;
             font-family: Arial, sans-serif;
             color: #f0f0f0;
             text-align: center;
@@ -23,7 +23,7 @@
             top: 0;
             left: 0;
             z-index: 1;
-            opacity: 0.15;
+            opacity: 0.3;
         }
         .container {
             max-width: 600px;
@@ -34,20 +34,21 @@
         h1 {
             font-size: 2.5em;
             margin-bottom: 10px;
-            color: #00ff99;
+            color: #00ff00;
             font-family: 'Courier New', Courier, monospace;
-            text-transform: uppercase;
+            text-transform: lowercase;
             letter-spacing: 2px;
-            text-shadow: 0 0 10px rgba(0, 255, 153, 0.5);
+            text-shadow: 0 0 15px rgba(0, 255, 0, 0.8);
         }
         p {
             font-size: 1.2em;
             line-height: 1.5;
             font-family: 'Courier New', Courier, monospace;
-            text-shadow: 0 0 5px rgba(240, 240, 240, 0.5);
+            color: #ffffff;
+            text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
         }
         a {
-            color: #00ff99;
+            color: #00ff00;
             text-decoration: none;
         }
         a:hover {
@@ -81,10 +82,10 @@
         const drops = new Array(columns).fill(1);
 
         function draw() {
-            ctx.fillStyle = 'rgba(26, 26, 26, 0.05)';
+            ctx.fillStyle = 'rgba(0, 0, 0, 0.1)';
             ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-            ctx.fillStyle = '#00ff99';
+            ctx.fillStyle = '#00ff00';
             ctx.font = fontSize + 'px monospace';
 
             for (let i = 0; i < drops.length; i++) {
